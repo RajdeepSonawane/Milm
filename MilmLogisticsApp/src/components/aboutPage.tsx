@@ -1,17 +1,15 @@
-import { useState } from "react";
+
 import {
   Box,
   Container,
   Typography,
-  Grid,
   Card,
-  CardContent,
   Avatar,
+  Grid2,
 } from "@mui/material";
 import { motion } from "framer-motion";
 import Header from "../header";
 import Footer from "../footer";
-import amazon from "../assets/amazon-logistics.jpg";
 
 interface OperationalFocusArea {
   _id: string;
@@ -125,9 +123,9 @@ export default function AboutPage() {
             Our Focus Areas
           </Typography>
 
-          <Grid container spacing={6} justifyContent="center">
+          <Grid2 container spacing={6} justifyContent="center">
             {focusAreas.map((area, index) => (
-              <Grid item xs={12} sm={6} md={4} key={area._id}>
+              <Grid2 size={{ xs: 12, sm: 6, md: 4 }} key={area._id}>
                 <motion.div
                   initial={{ opacity: 0, y: 40 }}
                   whileInView={{ opacity: 1, y: 0 }}
@@ -175,9 +173,9 @@ export default function AboutPage() {
                     </Typography>
                   </Card>
                 </motion.div>
-              </Grid>
+              </Grid2>
             ))}
-          </Grid>
+          </Grid2>
         </Container>
       </Box>
 
@@ -196,9 +194,9 @@ export default function AboutPage() {
             Our Clients
           </Typography>
 
-          <Grid container spacing={6} justifyContent="center">
+          <Grid2 container spacing={6} justifyContent="center">
             {clients.map((client, index) => (
-              <Grid item xs={12} md={4} key={client._id}>
+              <Grid2 size={{ xs: 12, md: 4 }} key={client._id}>
                 <motion.div
                   initial={{ opacity: 0, y: 40 }}
                   whileInView={{ opacity: 1, y: 0 }}
@@ -246,9 +244,9 @@ export default function AboutPage() {
                     </Typography>
                   </Card>
                 </motion.div>
-              </Grid>
+              </Grid2>
             ))}
-          </Grid>
+          </Grid2>
         </Container>
       </Box>
 

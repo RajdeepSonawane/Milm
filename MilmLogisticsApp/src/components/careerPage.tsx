@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+
 import {
   Box,
   Container,
@@ -6,14 +6,10 @@ import {
   Card,
   CardContent,
   Grid2,
-  Chip,
-  CircularProgress,
-  Avatar,
   Button,
 } from "@mui/material";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-import { Briefcase, MapPin, Clock, Calendar } from "lucide-react";
 import Header from "../header";
 import Footer from "../footer";
 

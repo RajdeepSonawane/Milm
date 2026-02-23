@@ -29,13 +29,7 @@ const SERVICES = [
   { title: "Payroll & Reporting Support", desc: "Timely payroll & reporting support." }
 ];
 
-const BENEFITS = [
-  "Strong operational control",
-  "Quick manpower fulfillment",
-  "Zero callout execution",
-  "P&L driven approach",
-  "Experienced operations team"
-];
+
 
 export default function HomePage() {
   const ref = useRef(null);
